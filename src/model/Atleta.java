@@ -13,6 +13,9 @@ public class Atleta {
 		super();
 		this.nome = nome;
 	}
+	public Atleta() {
+		super();
+	}
 	
 	public String getNome() {
 		return nome;
