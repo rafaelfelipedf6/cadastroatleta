@@ -5,7 +5,12 @@ public class Ciclista extends Atleta {
 	private String tempoCarreira;
 	private String recordCorrida;
 	private int aroBike;
+	private String nivel;
 	
+	public Ciclista(String nome,String nivel){
+		super(nome);
+		this.nivel = nivel;
+	}
 	
 	public String getMarcaBike() {
 		return marcaBike;
@@ -30,6 +35,12 @@ public class Ciclista extends Atleta {
 	}
 	public void setAroBike(int aroBike) {
 		this.aroBike = aroBike;
+	}
+	public String getNivel() {
+		return nivel;
+	}
+	public void setNivel(String nivel) {
+		this.nivel = nivel;
 	}
 	
 }
