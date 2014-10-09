@@ -1,5 +1,5 @@
 package model;
 
-public class Ciclista {
+public class Ciclista extends Atleta {
 
 }
