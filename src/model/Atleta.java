@@ -5,5 +5,6 @@ public class Atleta {
 	int peso;
 	String altura;
 	int idade;	
+	String cep;
 
 }
