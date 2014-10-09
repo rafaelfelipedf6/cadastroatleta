@@ -9,7 +9,7 @@ public class Ciclista extends Atleta {
 	
 	public Ciclista(String nome,String nivel){
 		super(nome);
-		this.nivel = nivel;
+		this.setNivel(nivel);
 	}
 	
 	public String getMarcaBike() {

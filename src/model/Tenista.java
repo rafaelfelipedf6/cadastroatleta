@@ -4,6 +4,14 @@ public class Tenista extends Atleta{
 	private String modelTaco;
 	private String marcaBolas;
 	private String campoPreferido;
+	private String nivel;
+	
+	public Tenista(String nome,String nivel){
+		super(nome);
+		this.setNivel(nivel);
+	}
+	
+	
 	public String getModelTaco() {
 		return modelTaco;
 	}
@@ -21,5 +29,15 @@ public class Tenista extends Atleta{
 	}
 	public void setCampoPreferido(String campoPreferido) {
 		this.campoPreferido = campoPreferido;
+	}
+
+
+	public String getNivel() {
+		return nivel;
+	}
+
+
+	public void setNivel(String nivel) {
+		this.nivel = nivel;
 	}
 }
