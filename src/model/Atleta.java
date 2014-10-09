@@ -1,6 +1,10 @@
 package model;
 
 public class Atleta {
+	public Atleta(String nome) {
+		super();
+		this.nome = nome;
+	}
 	String nome;
 	int peso;
 	String altura;
