@@ -2,11 +2,12 @@ package model;
 
 public class Atleta {
 		
-	String nome;
-	int peso;
-	String altura;
-	int idade;	
-	String cep;
+	private String nome;
+	private int peso;
+	private String altura;
+	private int idade;	
+	private String cep;
+	public Endereco endereco;
 	
 	public Atleta(String nome) {
 		super();
