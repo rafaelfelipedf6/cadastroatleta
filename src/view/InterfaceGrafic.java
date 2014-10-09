@@ -42,6 +42,7 @@ public class InterfaceGrafic {
 		/*Botoes do Menu Principal*/
 		JButton botaoCadastrarTenista = new JButton("Cadastrar Tenista");
 		JButton botaoCadastrarCiclista = new JButton("Cadastrar Ciclista");
+		JButton botaoExcluirAtleta = new JButton("Excluir Atleta");
 		JButton botaoSair = new JButton("Sair");
 		/*Adicionando ações dos Botoes*/
 		ActionListener sairListener = new ActionListener() {
@@ -91,14 +92,22 @@ public class InterfaceGrafic {
 					 
 				  }
 				};
+			ActionListener excluirAtleta = new ActionListener() {
+				  public void actionPerformed(ActionEvent e) {
+					  JOptionPane.showMessageDialog(null, "Excluido Com Sucesso");
+						 
+					 
+				  }
+				};
 		
 		/*Setando Acoes nos Botoes*/
 		botaoSair.addActionListener(sairListener);
 		botaoCadastrarTenista.addActionListener(cadastroTenista);
 		botaoCadastrarCiclista.addActionListener(cadastroCiclista);
-		
+		botaoExcluirAtleta.addActionListener(excluirAtleta);
 		painel.add(botaoCadastrarTenista);
 		painel.add(botaoCadastrarCiclista);
+		painel.add(botaoExcluirAtleta);
 		painel.add(botaoSair);
 		
 	}
