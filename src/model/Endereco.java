@@ -1,6 +1,7 @@
 package model;
 
 public class Endereco {
+	
 	private String logradouro;
 	private String cep;
 	private String numero;
@@ -9,6 +10,10 @@ public class Endereco {
 	private String estado;
 	public String getLogradouro() {
 		return logradouro;
+	}
+	public Endereco(String cep) {
+		super();
+		this.cep = cep;
 	}
 	public void setLogradouro(String logradouro) {
 		this.logradouro = logradouro;
